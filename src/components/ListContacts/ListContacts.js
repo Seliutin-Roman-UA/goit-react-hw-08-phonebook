@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 export function ListContacts() {
   const state = useSelector(state => state);
 
-  console.log('contacts_ListContacts', state.filter);
+  console.log('contacts_ListContacts', state);
   const a = state.filter;
 
     const normalizeFilter = a.toLowerCase();

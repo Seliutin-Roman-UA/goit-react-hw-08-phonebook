@@ -1,6 +1,6 @@
 import { Search, Caption } from './Filter.styled';
 import { useDispatch, useSelector} from 'react-redux';
-import { changeFiilter, resetFilter } from 'redux/actions';
+import { changeFilter, resetFilter } from 'redux/actions';
 
 export function Filter() {
   
@@ -16,7 +16,7 @@ export function Filter() {
             type="text"
             name="filter"
             value={filter}
-            onChange={(e) => dispatch(changeFiilter(e.currentTarget.value))}
+            onChange={e => dispatch(changeFilter(e.currentTarget.value))}
           />
           <button type="button" onClick={() => dispatch(resetFilter())}>
             x

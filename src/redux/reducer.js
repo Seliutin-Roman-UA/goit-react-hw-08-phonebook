@@ -1,4 +1,5 @@
-import { combineReducers } from 'redux';
+import { createReducer } from '@reduxjs/toolkit';
+import { addContact, changeFilter, delContact, resetFilter } from './actions';
 
 const keyLS = 'contacts';
 const initcontact = [
@@ -9,42 +10,65 @@ const initcontact = [
 ];
 
 function preloadedContact() {
-  
   return JSON.parse(localStorage.getItem(keyLS)) ?? initcontact;
 }
-const contactReducer = (state = preloadedContact(), action) => {
- 
-  switch (action.type) {
-    case 'contact/addContact':
+
+export const contactReducer = createReducer(preloadedContact(), builder => {
+  builder
+    .addCase(addContact, (state, action) => {
       if (state.some(el => el.name === action.payload.name)) {
         alert(`${action.payload.name} is already  in  contacts`);
         return state;
       }
       return [...state, action.payload];
-
-    case 'contact/deliteContact':
-     
+    })
+    .addCase(delContact, (state, action) => {
       return state.filter(i => i.id !== action.payload);
-
-    default:
-      return state;
-  }
-};
-
-const filterReducer = (state = '', action) => {
-  switch (action.type) {
-    case 'filter/changeFilter':
-      return action.payload;
-
-    case 'filter/resetFilter':
-      return '';
-
-    default:
-      return state;
-  }
-}
-
-export const rootReducer = combineReducers({
-  contacts: contactReducer,
-  filter: filterReducer,
+    });
 });
+
+export const filterReducer = createReducer(
+  '',
+
+  builder => {
+    builder
+      .addCase(changeFilter, (_, action) => {
+        return action.payload;
+      })
+      .addCase(resetFilter, () => {
+        return '';
+      });
+  }
+);
+
+// export const contactReducer_ = (state = preloadedContact(), action) => {
+//   switch (action.type) {
+
+//     case addContact.toString():
+//       if (state.some(el => el.name === action.payload.name)) {
+//         alert(`${action.payload.name} is already  in  contacts`);
+//         return state;
+//       }
+//       return [...state, action.payload];
+
+//     case delContact.toString():
+//       return state.filter(i => i.id !== action.payload);
+
+//     default:
+//       return state;
+//   }
+// };
+
+// export const filterReducer_ = (state = '', action) => {
+//   switch (action.type) {
+
+//     case changeFilter.toString():
+//       return action.payload;
+
+//     case resetFilter.toString():
+//       return '';
+
+//     default:
+//       return state;
+//   }
+// };

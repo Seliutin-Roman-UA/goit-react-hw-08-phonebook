@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import { Form, NameNumber, Btn } from './ContactForm.styled';
 import { useDispatch } from 'react-redux';
-import { add_Contact } from 'redux/actions';
+import { addContact } from 'redux/actions';
 
 export function ContactForm() {
-
   const dispatch = useDispatch();
-  
+
   const initstate = { name: '', number: '' };
   const [contact, setContact] = useState(initstate);
 
@@ -18,7 +17,7 @@ export function ContactForm() {
   const submitForm = event => {
     event.preventDefault();
     setContact(initstate);
-    dispatch(add_Contact(contact));
+    dispatch(addContact(contact));
   };
 
   return (
