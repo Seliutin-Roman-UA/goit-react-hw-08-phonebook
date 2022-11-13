@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import { Form, NameNumber, Btn } from './ContactForm.styled';
+import { useDispatch } from 'react-redux';
+import { add_Contact } from 'redux/actions';
 
-import PropTypes from 'prop-types';
+export function ContactForm() {
 
-export function ContactForm({ addContact }) {
+  const dispatch = useDispatch();
+  
   const initstate = { name: '', number: '' };
   const [contact, setContact] = useState(initstate);
 
@@ -14,8 +17,8 @@ export function ContactForm({ addContact }) {
 
   const submitForm = event => {
     event.preventDefault();
-    addContact(contact);
     setContact(initstate);
+    dispatch(add_Contact(contact));
   };
 
   return (
@@ -48,6 +51,3 @@ export function ContactForm({ addContact }) {
     </Form>
   );
 }
-ContactForm.propTypes = {
-  addContact: PropTypes.func.isRequired,
-};

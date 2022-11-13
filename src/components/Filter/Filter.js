@@ -1,14 +1,24 @@
-import { Search, Caption } from "./Filter.styled";
-import PropTypes from 'prop-types';
+import { Search, Caption } from './Filter.styled';
+import { useDispatch, useSelector} from 'react-redux';
+import { changeFiilter, resetFilter } from 'redux/actions';
 
-export function Filter({ value, onChange, onClick }) {
+export function Filter() {
+  
+  const dispatch = useDispatch();
+  const filter= useSelector((state)=>state.filter)
+
   return (
     <div>
       <Caption>
         Find contact by name
         <div>
-          <Search type="text" value={value} name="filter" onChange={onChange} />
-          <button type="button" onClick={onClick}>
+          <Search
+            type="text"
+            name="filter"
+            value={filter}
+            onChange={(e) => dispatch(changeFiilter(e.currentTarget.value))}
+          />
+          <button type="button" onClick={() => dispatch(resetFilter())}>
             x
           </button>
         </div>
@@ -16,8 +26,3 @@ export function Filter({ value, onChange, onClick }) {
     </div>
   );
 }
-Filter.propTypes = {
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-  onClick: PropTypes.func.isRequired,
-};
