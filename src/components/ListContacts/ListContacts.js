@@ -7,7 +7,7 @@ export function ListContacts() {
   const state = useSelector(state => state);
 
   const normalizeFilter = state.filter.toLowerCase();
-  const filtredContacts = state.contacts.filter(el =>
+  const filtredContacts = state.contacts.contacts.filter(el =>
     el.name.toLowerCase().includes(normalizeFilter)
   );
  

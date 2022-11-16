@@ -1,44 +1,51 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { nanoid } from 'nanoid';
+import { addContacts, getContacts, removeContacts } from './operations';
 
-const keyLS = 'contacts';
-let initcontact = [
-  { id: 'id-1', name: 'ROMAN Simpson', number: '459-12-56' },
-  { id: 'id-2', name: 'Hermione Kline', number: '443-89-12' },
-  { id: 'id-3', name: 'Eden Clements', number: '645-17-79' },
-  { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
-];
-
+const isPending = state => {
+  state.isLoading = true;
+};
+const isRejected = (state, { payload }) => {
+  state.isLoading = false;
+  state.error = payload;
+};
 
 const contactSlice = createSlice({
   name: 'contacts',
-  initialState: initcontact,
+  initialState: {
+    contacts: [],
+    isLoading: false,
+    error: null,
+  },
 
-  reducers: {
-    addContact: {
-      reducer(state, { payload }) {
-        if (state.some(el => el.name === payload.name)) {
-          alert(`${payload.name} is already  in  contacts`);
-          return state;
-        }
-        return [...state, payload];
-      },
-      prepare({ name, number }) {
-          return {
-            payload: {
-              id: nanoid(8),
-              name,
-              number,
-            },
-          };
-      },
+  extraReducers: {
+    [getContacts.pending]: isPending,
+    [getContacts.rejected]: isRejected,
+    [getContacts.fulfilled]: (state, { payload }) => {
+      state.isLoading = false;
+      state.error = null;
+      state.contacts = payload;
     },
-    delContact(state, { payload }) {
-      return state.filter(i => i.id !== payload);
+    //
+    [addContacts.pending]: isPending,
+    [addContacts.rejected]: isRejected,
+    [addContacts.fulfilled]: (state, { payload }) => {
+      state.isLoading = false;
+      state.error = null;
+      if (state.contacts.some(el => el.name === payload.name)) {
+        alert(`${payload.name} is already  in  contacts`);
+        return state;
+      }
+      state.contacts.push(payload);
+    },
+    //
+    [removeContacts.pending]: isPending,
+    [removeContacts.rejected]: isRejected,
+    [removeContacts.fulfilled]: (state, { payload }) => {
+      state.isLoading = false;
+      state.error = null;
+      state.contacts = state.contacts.filter(i => i.id !== payload);
     },
   },
 });
-
-export const { addContact, delContact } = contactSlice.actions;
 
 export const contactReducer = contactSlice.reducer;

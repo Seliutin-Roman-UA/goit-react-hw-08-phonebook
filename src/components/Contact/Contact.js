@@ -1,17 +1,18 @@
 import { ContactItem } from './Contact.styled';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { delContact } from 'redux/contactSlice';
+import { removeContacts } from 'redux/operations';
 
 export function Contact({ element: { id, name, number } }) {
   const dispatch = useDispatch();
+  
 
   return (
     <ContactItem>
       <span>
         {name}: {number}
       </span>
-      <button type="button" onClick={() => dispatch(delContact(id))}>
+      <button type="button" onClick={() => dispatch(removeContacts(id))}>
         Delete
       </button>
     </ContactItem>
