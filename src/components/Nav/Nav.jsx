@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import { StyledNav, StyledWrapper, StyledNavLink } from './Nav.styled';
 
 export function Nav() {
