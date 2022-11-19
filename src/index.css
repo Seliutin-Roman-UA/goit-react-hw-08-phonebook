@@ -7,6 +7,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(27, 0, 49, 0.2);
+  color: rgb(253, 182, 0);
 }
 
 code {
@@ -17,5 +19,18 @@ code {
   display: flex;
   margin-bottom: 8px;
   width: 250px;
-  
+}
+a {
+  text-decoration: none;
+  color: rgb(236, 180, 0);
+}
+button {
+  border: 0px;
+  cursor: pointer;
+  color: rgb(236, 120, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(27, 0, 49, 0.5),
+    rgba(27, 0, 49, 0.2)
+  );
 }

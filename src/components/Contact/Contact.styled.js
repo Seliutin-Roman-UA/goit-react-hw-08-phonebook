@@ -4,5 +4,5 @@ export const ContactItem = styled.li`
   padding: 6px;
   display: flex;
   justify-content: space-between;
-  width: 320px;
+  gap:8px;
  `;

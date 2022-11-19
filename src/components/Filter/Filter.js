@@ -1,6 +1,7 @@
 import { Search, Caption } from './Filter.styled';
 import { useDispatch, useSelector} from 'react-redux';
-import { changeFilter, resetFilter } from 'redux/filterSlice';
+import { changeFilter, resetFilter } from 'redux/filter/filterSlice';
+
 
 export function Filter() {
   
