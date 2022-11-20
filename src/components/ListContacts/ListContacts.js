@@ -1,5 +1,4 @@
 import { Contact } from 'components/Contact/Contact';
-import { ContactList } from './ListContacts.styled';
 import { useSelector } from 'react-redux';
 
 export function ListContacts() {
@@ -17,10 +16,10 @@ export function ListContacts() {
  
   if (filtredContacts.length === 0) return <p>NOTHING IS FOUND</p>;
   return (
-    <ContactList>
+    <ul>
       {filtredContacts.map(el => (
         <Contact key={el.id} element={el} />
       ))}
-    </ContactList>
+    </ul>
   );
 }

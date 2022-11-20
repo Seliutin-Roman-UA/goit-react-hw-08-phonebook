@@ -10,7 +10,3 @@ export const Form = styled.form`
   border: 1px solid;
   box-shadow : 0 0 10px rgba(0, 0, 0, 0.7);
 `;
-export const NameNumber = styled.input`
-  display: block;
-  width: 250px;
-`;

@@ -8,9 +8,4 @@ export const StyledConteiner = styled.div`
   max-width: 600px;
   min-height: 100vh;
 
-  /* background: linear-gradient(
-    180deg,
-    rgba(27, 0, 49, 0.5),    
-    rgba(27, 0, 49, 0.2)
-  ); */
 `;

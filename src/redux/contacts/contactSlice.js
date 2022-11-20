@@ -21,8 +21,7 @@ const contactSlice = createSlice({
     [getContacts.pending]: isPending,
     [getContacts.rejected]: isRejected,
     [getContacts.fulfilled]: (state, { payload }) => {
-      console.log('payload>>>>', payload);
-      state.isLoading = false;
+        state.isLoading = false;
       state.error = null;
       console.log('state>>>>', state);
       state.contacts = payload;

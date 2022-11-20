@@ -30,7 +30,6 @@ export function RegisterForm() {
             width: '280px',
           },
         }}
-        inputLabelProps={{ size: 'small' }}
         margin="dense"
         color="secondary"
         id="outlined-basic"
@@ -48,7 +47,6 @@ export function RegisterForm() {
             width: '280px',
           },
         }}
-        inputLabelProps={{ size: 'small' }}
         margin="dense"
         color="secondary"
         id="outlined-basic"
@@ -87,7 +85,6 @@ export function RegisterForm() {
       >
         Register
       </Button>
-    
     </StyledForm>
   );
 }

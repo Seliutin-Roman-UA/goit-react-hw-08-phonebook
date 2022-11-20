@@ -31,7 +31,7 @@ export function LoginForm() {
             width: '280px',
           },
         }}
-        inputLabelProps={{ size: 'small' }}
+     
         margin="dense"
         color="secondary"
         id="outlined-basic"
@@ -49,7 +49,7 @@ export function LoginForm() {
             width: '280px',
           },
         }}
-        inputLabelProps={{ size: 'small' }}
+       
         margin="dense"
         color="secondary"
         id="outlined-basic"
