@@ -6,6 +6,7 @@ import {
   StyledP,
   StyledNavLink,
 } from './NavUser.styled';
+import { MdContactPhone, MdOutlineLogout } from 'react-icons/md';
 
 export function NavUser() {
   const dispatch = useDispatch();
@@ -14,11 +15,13 @@ export function NavUser() {
 
   return (
     <StyledNav>
-      <StyledNavLink to="/contacts">Contacts</StyledNavLink>
+      <StyledNavLink to="/contacts">
+        <MdContactPhone style={{ width: '24px', height: '24px' }} /> Contacts
+      </StyledNavLink>
       <StyledWrapper>
         <StyledP>{`Hello, ${user.name} (${user.email})`}</StyledP>
         <StyledNavLink to="/" onClick={userLogOut}>
-          LogOut
+          <MdOutlineLogout style={{ width: '24px', height: '24px' }} /> LogOut
         </StyledNavLink>
       </StyledWrapper>
     </StyledNav>

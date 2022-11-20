@@ -14,7 +14,3 @@ export const NameNumber = styled.input`
   display: block;
   width: 250px;
 `;
-export const Btn = styled.button`
-  padding: 4px;
-  width: fit-content;
-`;

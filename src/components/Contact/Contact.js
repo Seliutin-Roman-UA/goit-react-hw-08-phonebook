@@ -2,6 +2,8 @@ import { ContactItem } from './Contact.styled';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeContacts } from 'redux/contacts/operations';
+import Button from '@mui/material/Button';
+import { MdRemoveCircle } from 'react-icons/md';
 
 
 export function Contact({ element: { id, name, number } }) {
@@ -13,9 +15,16 @@ export function Contact({ element: { id, name, number } }) {
       <span>
         {name}: {number}
       </span>
-      <button type="button" onClick={() => dispatch(removeContacts(id))}>
+      <Button
+        variant="outlined"
+        color="secondary"
+        size="small"
+        startIcon={<MdRemoveCircle />}
+        type="button"
+        onClick={() => dispatch(removeContacts(id))}
+      >
         Delete
-      </button>
+      </Button>
     </ContactItem>
   );
 }

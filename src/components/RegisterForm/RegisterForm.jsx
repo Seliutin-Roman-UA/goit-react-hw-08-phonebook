@@ -1,8 +1,10 @@
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
-import { StyledForm, StyledLabel } from './Registration.styled';
+import { StyledForm } from './Registration.styled';
+import { Button, TextField } from '@mui/material';
+import { IoMdPersonAdd } from 'react-icons/io';
 
-export function RegisterForm () {
+export function RegisterForm() {
   const dispatch = useDispatch();
 
   const handleSubmit = e => {
@@ -21,19 +23,71 @@ export function RegisterForm () {
   return (
     <StyledForm onSubmit={handleSubmit} autoComplete="on">
       <h1 style={{ textAlign: 'center' }}>Please, fill the fields:</h1>
-      <StyledLabel required>
-        Username
-        <input type="text" name="name" />
-      </StyledLabel>
-      <StyledLabel required>
-        Email
-        <input type="email" name="email" />
-      </StyledLabel>
-      <StyledLabel required>
-        Password
-        <input type="password" name="password" />
-      </StyledLabel>
-      <button type="submit">Register</button>
+      <TextField
+        inputProps={{
+          sx: {
+            p: '5px',
+            width: '280px',
+          },
+        }}
+        inputLabelProps={{ size: 'small' }}
+        margin="dense"
+        color="secondary"
+        id="outlined-basic"
+        label="Username"
+        variant="outlined"
+        size="small"
+        type="text"
+        name="name"
+        required
+      />
+      <TextField
+        inputProps={{
+          sx: {
+            p: '5px',
+            width: '280px',
+          },
+        }}
+        inputLabelProps={{ size: 'small' }}
+        margin="dense"
+        color="secondary"
+        id="outlined-basic"
+        label="Email"
+        variant="outlined"
+        size="small"
+        type="email"
+        name="email"
+        required
+      />
+      <TextField
+        inputProps={{
+          sx: {
+            p: '5px',
+            width: '280px',
+          },
+        }}
+        inputLabelProps={{ size: 'small' }}
+        margin="dense"
+        color="secondary"
+        id="outlined-basic"
+        label="Password"
+        variant="outlined"
+        size="small"
+        type="password"
+        name="password"
+        required
+      />
+      <Button
+        sx={{ marginTop: '8px' }}
+        variant="outlined"
+        color="secondary"
+        size="small"
+        startIcon={<IoMdPersonAdd />}
+        type="submit"
+      >
+        Register
+      </Button>
+    
     </StyledForm>
   );
-};
+}

@@ -17,20 +17,23 @@ export const StyledP = styled.p`
 margin: 0;
 `;
 export const StyledNavLink = styled(NavLink)`
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: 400;
   padding: 5px;
+  color: rgb(156, 39, 176);
+  fill: rgb(156, 39, 176);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  border-radius: 4px;
   &.active {
-    color: rgb(236, 120, 0);
-    background: linear-gradient(
-      180deg,
-      rgba(27, 0, 49, 0.5),
-      rgba(27, 0, 49, 0.2)
-    );
+    background-color: rgba(156, 39, 176, 0.2);
   }
 
   &:hover,
   :focus {
-    color: rgb(236, 120, 0);
+    background-color: rgba(156, 39, 176, 0.2);
   }
 `;
 
