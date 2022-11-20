@@ -1,0 +1,266 @@
+[33mcommit cc9fa5da07d4c362521119f8dd9e6a9c389520ba[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Seliutin-Roman-UA <selutin@gmail.com>
+Date:   Sun Nov 20 01:03:39 2022 +0200
+
+    Update NavUser.jsx
+
+[33mcommit 1d8ed0ae164428d840e2f50ad0d980b297408c33[m
+Author: Seliutin-Roman-UA <selutin@gmail.com>
+Date:   Sun Nov 20 01:00:09 2022 +0200
+
+    hw/
+
+[33mcommit a66c51010e696b0c541f307b78d15d87e42d71b1[m
+Author: Seliutin-Roman-UA <selutin@gmail.com>
+Date:   Sun Nov 20 00:56:04 2022 +0200
+
+    hw
+
+[33mcommit 1ee86a4b30e1c558545181c6489d709291e8f035[m
+Author: Seliutin-Roman-UA <selutin@gmail.com>
+Date:   Sat Nov 19 03:38:02 2022 +0200
+
+    hight
+
+[33mcommit 659af9f0234d35409b45addca12b3acfa86a7037[m
+Author: Seliutin-Roman-UA <selutin@gmail.com>
+Date:   Wed Nov 16 03:13:28 2022 +0200
+
+    final
+
+[33mcommit 63133220c21f9e4aba53548a5dd302b4d9304b6d[m
+Author: Seliutin-Roman-UA <selutin@gmail.com>
+Date:   Wed Nov 16 02:40:48 2022 +0200
+
+    hw
+
+[33mcommit 7c5bd571fadf096e4382cf5b0d05d5b0834ab9e5[m
+Author: Seliutin-Roman-UA <selutin@gmail.com>
+Date:   Tue Nov 15 01:58:56 2022 +0200
+
+    start
+
+[33mcommit ca6b15312796f71669704114d05c164165258f00[m
+Author: Seliutin-Roman-UA <105205767+Seliutin-Roman-UA@users.noreply.github.com>
+Date:   Tue Nov 15 01:43:39 2022 +0200
+
+    Update package.json
+
+[33mcommit 8931b79d0ffa3ded989a0678ed63f3f61b74e921[m
+Author: Seliutin-Roman-UA <selutin@gmail.com>
+Date:   Mon Nov 14 01:17:37 2022 +0200
+
+    Update contactSlice.js
+
+[33mcommit 5a2eb62c125cd373472d4d6a73450841e1c272a2[m
+Author: Seliutin-Roman-UA <selutin@gmail.com>
+Date:   Mon Nov 14 01:07:31 2022 +0200
+
+    finaly
+
+[33mcommit 975d8658f9cd24ec5d7fb762e6c7f1083a8290cf[m
+Author: Seliutin-Roman-UA <selutin@gmail.com>
+Date:   Mon Nov 14 01:04:29 2022 +0200
+
+    reduxWithSlise
+
+[33mcommit fd3e420ed3e61d592f41499ba7e25fdbd1b1e39e[m
+Author: Seliutin-Roman-UA <selutin@gmail.com>
+Date:   Sun Nov 13 16:23:56 2022 +0200
+
+    RexusToolkit(wiht0utSlice)
+
+[33mcommit 2d5f08ea63ac8560549ca15cb3c392c605a3d2b3[m
+Author: Seliutin-Roman-UA <selutin@gmail.com>
+Date:   Sun Nov 13 13:11:09 2022 +0200
+
+    vanila_redux
+
+[33mcommit d714dfbc51675fd7824928483d177c82aa6dd707[m
+Author: Seliutin-Roman-UA <105205767+Seliutin-Roman-UA@users.noreply.github.com>
+Date:   Sat Nov 12 22:08:36 2022 +0200
+
+    Update package.json
+
+[33mcommit b97d3e63df45f0e4c875036f0a915f70d46021cc[m
+Author: Seliutin-Roman-UA <selutin@gmail.com>
+Date:   Sat Nov 5 01:55:38 2022 +0200
+
+    hw
+
+[33mcommit be97717f79ffe26cdd6af31040e84d3d6da19fb1[m
+Author: Seliutin-Roman-UA <105205767+Seliutin-Roman-UA@users.noreply.github.com>
+Date:   Fri Nov 4 23:05:56 2022 +0200
+
+    Update package.json
+
+[33mcommit 1b518b18aa0831d26dfb5c80f9a429c0a7488759[m
+Author: goit-i18n <84774169+goit-i18n@users.noreply.github.com>
+Date:   Thu Sep 29 19:25:07 2022 +0300
+
+    Update README.en.md
+
+[33mcommit 1d6ab8cb3a6f4204ee416afa7be82c29295db135[m
+Author: goit-i18n <84774169+goit-i18n@users.noreply.github.com>
+Date:   Thu Sep 29 19:24:40 2022 +0300
+
+    Update README.en.md
+
+[33mcommit 4b365112bd1b697c6ee688001c3ed08aee3df0ef[m
+Author: goit-i18n <84774169+goit-i18n@users.noreply.github.com>
+Date:   Thu Sep 29 19:24:20 2022 +0300
+
+    Update README.en.md
+
+[33mcommit edad0ecf8b11981257f691be7084b1a5fba96f86[m
+Author: goit-i18n <84774169+goit-i18n@users.noreply.github.com>
+Date:   Thu Sep 22 14:32:28 2022 -0600
+
+    Update README.es.md
+    
+    to spanish
+
+[33mcommit f89fa0c664cf97c1acd643a20046e0522fed7751[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Mon Sep 19 18:03:10 2022 +0300
+
+    update readme
+
+[33mcommit 4e79ef2134d94a8d62f03eaf5822f8efc9ecb753[m
+Merge: de421d9 1d939a3
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Fri Sep 9 20:20:13 2022 +0300
+
+    Merge pull request #9 from NikolayLemehov/ml-unnecessary-ignore
+    
+    remove unnecessary gitignore rule
+
+[33mcommit 1d939a3a55d93e123f081815f66bd343a1875267[m
+Author: Nikolay_Liemiekhov <nicklemster@gmail.com>
+Date:   Thu Sep 1 21:55:40 2022 +0300
+
+    remove unnecessary gitignore rule
+
+[33mcommit de421d9ebff1036646c6b415b657391384c636a3[m
+Merge: cb446c0 f745fdd
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Mon Aug 1 19:20:38 2022 +0300
+
+    Merge pull request #6 from goitacademy/dependabot/npm_and_yarn/terser-5.14.2
+    
+    Bump terser from 5.12.1 to 5.14.2
+
+[33mcommit f745fdd630a96fad409f694260e636bee3a88973[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Thu Jul 21 01:24:45 2022 +0000
+
+    Bump terser from 5.12.1 to 5.14.2
+    
+    Bumps [terser](https://github.com/terser/terser) from 5.12.1 to 5.14.2.
+    - [Release notes](https://github.com/terser/terser/releases)
+    - [Changelog](https://github.com/terser/terser/blob/master/CHANGELOG.md)
+    - [Commits](https://github.com/terser/terser/commits)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: terser
+      dependency-type: indirect
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit cb446c072447af1be39a479e38667f2ecceb8ab1[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Thu May 19 16:44:11 2022 +0300
+
+    bump react version
+
+[33mcommit 74b2b8956f4dfbe239fb6bb38020401b8fc03345[m
+Merge: a9f05e2 132df95
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Thu May 19 16:38:44 2022 +0300
+
+    Merge pull request #4 from goitacademy/dependabot/npm_and_yarn/ejs-3.1.8
+    
+    Bump ejs from 3.1.6 to 3.1.8
+
+[33mcommit 132df9508320bdbe29f691d848262a915be9ee94[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Tue May 17 18:28:37 2022 +0000
+
+    Bump ejs from 3.1.6 to 3.1.8
+    
+    Bumps [ejs](https://github.com/mde/ejs) from 3.1.6 to 3.1.8.
+    - [Release notes](https://github.com/mde/ejs/releases)
+    - [Changelog](https://github.com/mde/ejs/blob/main/CHANGELOG.md)
+    - [Commits](https://github.com/mde/ejs/compare/v3.1.6...v3.1.8)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: ejs
+      dependency-type: indirect
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit a9f05e2abaaa83894e734e5aefe8f007c78912ba[m
+Author: goit-i18n <84774169+goit-i18n@users.noreply.github.com>
+Date:   Thu May 5 15:03:18 2022 +0100
+
+    Update README.pl.md
+
+[33mcommit aca1d79ccfd8c2d3efaf78f0bcb2533930215d95[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Fri Apr 29 14:25:43 2022 +0300
+
+    add github actions config readme section
+
+[33mcommit 85f4b6b60f39f37e24a48b35c999e444457da71a[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Thu Apr 28 19:28:11 2022 +0300
+
+    Update App.jsx
+
+[33mcommit 1ef84783d14b6b891dd353c295a050a1343f1805[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Wed Apr 13 20:39:52 2022 +0300
+
+    Update index.js
+
+[33mcommit db9297f0b8d21b1c8a126449dcf00541b2f42311[m
+Merge: 0c1ae7c 84626fa
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Tue Apr 5 14:03:39 2022 +0300
+
+    Merge pull request #3 from goitacademy/dependabot/npm_and_yarn/minimist-1.2.6
+    
+    Bump minimist from 1.2.5 to 1.2.6
+
+[33mcommit 0c1ae7cf53fb2070ef793c151fac770c67fbcbe8[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Mon Apr 4 18:50:15 2022 +0300
+
+    bump react to v18
+
+[33mcommit 84626faa75bee939d816faeed0ae8c544ca0e5a1[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Fri Apr 1 07:47:17 2022 +0000
+
+    Bump minimist from 1.2.5 to 1.2.6
+    
+    Bumps [minimist](https://github.com/substack/minimist) from 1.2.5 to 1.2.6.
+    - [Release notes](https://github.com/substack/minimist/releases)
+    - [Commits](https://github.com/substack/minimist/compare/1.2.5...1.2.6)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: minimist
+      dependency-type: indirect
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit db06b7a148510078ab603cde748251b90e7c156d[m
+Merge: ca7d726 f36ab42
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Wed Feb 16 10:03:39 2022 +
