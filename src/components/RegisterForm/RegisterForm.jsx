@@ -27,7 +27,7 @@ export function RegisterForm() {
         inputProps={{
           sx: {
             p: '5px',
-            width: '280px',
+            width: '320px',
           },
         }}
         margin="dense"
@@ -44,7 +44,7 @@ export function RegisterForm() {
         inputProps={{
           sx: {
             p: '5px',
-            width: '280px',
+            width: '320px',
           },
         }}
         margin="dense"
@@ -61,7 +61,7 @@ export function RegisterForm() {
         inputProps={{
           sx: {
             p: '5px',
-            width: '280px',
+            width: '320px',
           },
         }}
         inputLabelProps={{ size: 'small' }}

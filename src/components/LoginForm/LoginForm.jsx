@@ -28,7 +28,7 @@ export function LoginForm() {
         inputProps={{
           sx: {
             p: '5px',
-            width: '280px',
+            width: '320px',
           },
         }}
      
@@ -46,7 +46,7 @@ export function LoginForm() {
         inputProps={{
           sx: {
             p: '5px',
-            width: '280px',
+            width: '320px',
           },
         }}
        

@@ -16,7 +16,7 @@ export function ListContacts() {
  
   if (filtredContacts.length === 0) return <p>NOTHING IS FOUND</p>;
   return (
-    <ul>
+    <ul >
       {filtredContacts.map(el => (
         <Contact key={el.id} element={el} />
       ))}

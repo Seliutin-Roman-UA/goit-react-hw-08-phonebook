@@ -8,11 +8,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: rgba(27, 0, 49, 0.2); */
-  
-  color: rgba(156, 39, 176, 0.6); font-family: Raleway;
- font-size: 16px;
+
+  color: rgba(156, 39, 176, 0.6);
+  font-family: Raleway;
+  font-size: 16px;
 }
-html { font-size: 12px;}
+html {
+  font-size: 12px;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -25,6 +28,8 @@ code {
 }
 a {
   text-decoration: none;
-  
 }
-
+ul{
+  margin: 0;
+  padding: 0;
+}
